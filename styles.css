@@ -1,0 +1,217 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  position: relative;
+}
+.background-blur {
+  background: url('sushi-bg.jpg') no-repeat center center/cover;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(6px);
+  opacity: 0.6;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.stars span {
+  font-size: 2em;
+  cursor: pointer;
+  color: #ddd;
+}
+.stars span:hover,
+.stars span.selected {
+  color: gold;
+}
+textarea, input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d14b4b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a93c3c;
+}
+
+    .logo-container {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        border: 2px solid #fff; /* Белая граница вокруг логотипа */
+        margin: 10px;
+    }
+    
+    .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  /* Чтобы логотип заполнил круг */
+    }
+    
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Для адаптивности */
+@media (max-width: 600px) {
+    .logo-circle {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Добавляем стили для логотипа */
+.logo-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto 20px;
+}
+
+.logo-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Чтобы логотип заполнил круг */
+}
+
+/* Для адаптивности */
+@media (max-width: 600px) {
+    .logo-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Обновленные стили для логотипа */
+.logo-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.logo-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Чтобы логотип заполнил круг */
+}
+
+/* Обновленный стиль для логотипа */
+.logo-container {
+    width: 120px; /* Размер увеличен */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto 20px;  /* Центрирование логотипа */
+}
+
+.logo-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Чтобы логотип заполнил круг */
+}
+
+/* Для адаптивности */
+@media (max-width: 600px) {
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
