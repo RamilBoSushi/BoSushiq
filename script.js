@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            modal.style.display = "block";  // Показываем сообщение
+            modal.style.display = "block";  // Pokazujemy okno podziękowania
         } else {
             window.location.href = "https://maps.app.goo.gl/WWB4ZqHCcaKKPsJa8";
         }
