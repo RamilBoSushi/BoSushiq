@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const modal = document.getElementById("thankYouModal");
     const closeBtn = document.querySelector(".close");
+    const modalText = modal?.querySelector("p");
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -20,15 +21,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            modal.style.display = "block";  // Pokazujemy okno podziękowania
+            if (modal && modalText) {
+                modalText.innerText = "Dziękujemy za Twoją opinię!";
+                modal.style.display = "block";
+            }
         } else {
             window.location.href = "https://maps.app.goo.gl/WWB4ZqHCcaKKPsJa8";
         }
     });
 
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-    };
+    if (closeBtn) {
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+    }
 
     window.onclick = function (event) {
         if (event.target === modal) {
